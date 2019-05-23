@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\jgrimes\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jgrimes\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Library.-1329329870.00" t="ExcludeRecursive" />
+    <e p="C:\Users\jgrimes\Documents\Development\Pluralsight\BuildingRESTfulAPIwithASPNET\Library" t="IncludeFlat">
+      <e p="Library.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Solution Items" t="Include" />
+      <e p="src" t="Include">
+        <e p="Library.API" t="IncludeRecursive">
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Entities" t="Include">
+            <e p="Author.cs" t="Include" />
+            <e p="Book.cs" t="Include" />
+            <e p="LibraryContext.cs" t="Include" />
+            <e p="LibraryContextExtensions.cs" t="Include" />
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="DateTimeOffsetExtensions.cs" t="Include" />
+          </e>
+          <e p="Library.API.csproj" t="IncludeRecursive" />
+          <e p="Migrations" t="Include">
+            <e p="InitialMigration.cs" t="Include" />
+            <e p="InitialMigration.Designer.cs" t="Include" />
+            <e p="LibraryContextModelSnapshot.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.0" t="Include">
+                <e p="Library.API.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Program.cs" t="Include" />
+          <e p="Project_Readme.html" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="ILibraryRepository.cs" t="Include" />
+            <e p="LibraryRepository.cs" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="web.config" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>
