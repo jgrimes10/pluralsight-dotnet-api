@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\jgrimes\.Rider2019.1\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\jgrimes\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\jgrimes\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Library.-1329329870.00" t="ExcludeRecursive" />
     <e p="C:\Users\jgrimes\Documents\Development\Pluralsight\BuildingRESTfulAPIwithASPNET\Library" t="IncludeFlat">
@@ -11,6 +12,9 @@
         <e p="Library.API" t="IncludeRecursive">
           <e p="appsettings.json" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
+          <e p="Controllers" t="Include">
+            <e p="AuthorsController.cs" t="Include" />
+          </e>
           <e p="Entities" t="Include">
             <e p="Author.cs" t="Include" />
             <e p="Book.cs" t="Include" />
@@ -26,9 +30,12 @@
             <e p="InitialMigration.Designer.cs" t="Include" />
             <e p="LibraryContextModelSnapshot.cs" t="Include" />
           </e>
+          <e p="Models" t="Include">
+            <e p="AuthorDto.cs" t="Include" />
+          </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
-              <e p="netcoreapp2.0" t="Include">
+              <e p="netcoreapp2.2" t="Include">
                 <e p="Library.API.AssemblyInfo.cs" t="Include" />
               </e>
             </e>

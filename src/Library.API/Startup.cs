@@ -1,4 +1,7 @@
-﻿using Library.API.Entities;
+﻿using AutoMapper;
+using Library.API.Entities;
+using Library.API.Helpers;
+using Library.API.Models;
 using Library.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,11 +14,11 @@ namespace Library.API
 {
     public class Startup
     {
-        public static IConfiguration Configuration;
+        private static IConfiguration _configuration;
 
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -27,7 +30,7 @@ namespace Library.API
             // register the DbContext on the container, getting the connection string from
             // appSettings (note: use this during development; in a production environment,
             // it's better to store the connection string in an environment variable)
-            var connectionString = Configuration["connectionStrings:libraryDBConnectionString"];
+            var connectionString = _configuration["connectionStrings:libraryDBConnectionString"];
             services.AddDbContext<LibraryContext>(o => o.UseSqlServer(connectionString));
 
             // register the repository
@@ -42,6 +45,17 @@ namespace Library.API
                 app.UseDeveloperExceptionPage();
             else
                 app.UseExceptionHandler();
+
+            // create an auto mapper map from the author entity to the author DTO
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Author, AuthorDto>()
+                    // map the first & last name to a name variable that concatenates them
+                    .ForMember(dest => dest.Name, opt => opt.MapFrom(src =>
+                        $"{src.FirstName} {src.LastName}"))
+                    .ForMember(dest => dest.Age, opt => opt.MapFrom(src =>
+                        src.DateOfBirth.GetCurrentAge()));
+            });
 
             libraryContext.EnsureSeedDataForContext();
 

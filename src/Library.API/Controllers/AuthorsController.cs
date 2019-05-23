@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using AutoMapper;
+using Library.API.Models;
 using Library.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,8 +20,30 @@ namespace Library.API.Controllers
         [HttpGet]
         public IActionResult GetAuthors()
         {
+            // get all of the authors
             var authorsFromRepo = _libraryRepository.GetAuthors();
-            return new JsonResult(authorsFromRepo);
+
+            // map the author entities from the db to the author DTO using AutoMapper
+            var authors = Mapper.Map<IEnumerable<AuthorDto>>(authorsFromRepo);
+
+            return Ok(authors);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetAuthor(Guid id)
+        {
+            // get the author from the db by id
+            var authorFromRepo = _libraryRepository.GetAuthor(id);
+
+            // check to make sure an author was found with the given id
+            if (authorFromRepo == null)
+                // if not, return 404, not found
+                return NotFound();
+
+            // author was found, so map it to the author DTO
+            var author = Mapper.Map<AuthorDto>(authorFromRepo);
+            // return the author dto
+            return Ok(author);
         }
     }
 }
