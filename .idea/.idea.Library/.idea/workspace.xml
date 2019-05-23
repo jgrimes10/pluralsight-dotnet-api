@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d4b73f2-37c3-42ba-b4a1-49ee09545d9a" name="Default Changelist" comment="Initial commit. Project is as it was downloaded from pluralsight course">
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Program.cs" afterDir="false" />
+    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,16 +17,16 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Library.API/Program.cs">
+        <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
-                <marker date="1558636746332" expanded="false" signature="6:63" ph="..." />
-                <marker date="1558636746332" expanded="true" signature="86:432" ph="{...}" />
-                <marker date="1558636746332" expanded="true" signature="113:430" ph="{...}" />
-                <marker date="1558636746332" expanded="true" signature="166:224" ph="{...}" />
-                <marker date="1558636746332" expanded="true" signature="285:424" ph="{...}" />
+                <marker date="1558640939439" expanded="false" signature="6:59" ph="..." />
+                <marker date="1558640939439" expanded="true" signature="94:589" ph="{...}" />
+                <marker date="1558640939439" expanded="true" signature="144:587" ph="{...}" />
+                <marker date="1558640939439" expanded="true" signature="286:358" ph="{...}" />
+                <marker date="1558640939439" expanded="true" signature="442:581" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -35,17 +38,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response1.txt" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Library.API/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Library.API/web.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Library.API/Migrations/InitialMigration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Library.API/Library.API.csproj" />
-        <option value="$PROJECT_DIR$/src/Library.API/Program.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" />
       </list>
     </option>
   </component>
@@ -60,6 +58,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -78,12 +77,18 @@
               <item name="src" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Library.API" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Library" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Library.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
@@ -94,32 +99,6 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:5000" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-      </list>
-    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -136,7 +115,7 @@
   <component name="RunManager" selected=".NET Launch Settings Profile.Library.API">
     <configuration name="Library.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Library.API/Library.API.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.0" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
       <option name="LAUNCH_PROFILE_NAME" value="Library.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -151,7 +130,7 @@
     </configuration>
     <configuration name="Library.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Library.API/Library.API.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.0" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -170,27 +149,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6d4b73f2-37c3-42ba-b4a1-49ee09545d9a" name="Default Changelist" comment="" />
-      <created>1558634978465</created>
+      <changelist id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="" />
+      <created>1558639398686</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558634978465</updated>
-      <workItem from="1558634983380" duration="74000" />
-      <workItem from="1558635266530" duration="335000" />
-      <workItem from="1558636127182" duration="763000" />
+      <updated>1558639398686</updated>
+      <workItem from="1558639403373" duration="866000" />
     </task>
-    <task id="LOCAL-00001" summary="Initial commit. Project is as it was downloaded from pluralsight course">
-      <created>1558636439134</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1558636439134</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1172000" />
+    <option name="totallyTimeSpent" value="866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -203,11 +172,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="158" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32934782" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32934782" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="REST Client" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" />
       <window_info anchor="bottom" id="Build" weight="0.32934782" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -215,36 +193,20 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32934782" />
-      <window_info active="true" anchor="bottom" id="NuGet" order="7" visible="true" weight="0.32934782" />
-      <window_info anchor="bottom" id="Performance Profiler" order="8" weight="0.32934782" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32934782" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.32934782" />
-      <window_info anchor="bottom" id="REST Client" order="13" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32934782" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Initial commit. Project is as it was downloaded from pluralsight course" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit. Project is as it was downloaded from pluralsight course" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -256,85 +218,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files/dotnet/sdk/2.2.104/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.ObsoleteReferences.targets">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/web.config">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/Library.API.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/Migrations/InitialMigration.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <marker date="1558636361635" expanded="false" signature="6:61" ph="..." />
-            <marker date="1558636361635" expanded="true" signature="95:1936" ph="{...}" />
-            <marker date="1558636361635" expanded="true" signature="151:1934" ph="{...}" />
-            <marker date="1558636361635" expanded="true" signature="227:1700" ph="{...}" />
-            <marker date="1558636361635" expanded="true" signature="352:685" ph="{...}" />
-            <marker date="1558636361635" expanded="true" signature="887:1159" ph="{...}" />
-            <marker date="1558636361635" expanded="true" signature="1215:1554" ph="{...}" />
-            <marker date="1558636361635" expanded="true" signature="1773:1928" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <marker date="1558636361616" expanded="false" signature="6:94" ph="..." />
-            <marker date="1558636361616" expanded="true" signature="126:2811" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="184:2809" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="298:350" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="396:711" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="775:1130" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="863:1120" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="894:997" ph="/* if there isn't an id filled out (ie: we're not upserting), ... */" />
-            <marker date="1558636361616" expanded="true" signature="1179:1263" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="1312:1377" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="1420:1481" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="1529:1624" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="1673:1780" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="1856:2061" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="2110:2176" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="2242:2384" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="2451:2589" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="2641:2707" ph="{...}" />
-            <marker date="1558636361616" expanded="true" signature="2735:2803" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/Program.cs">
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
-            <marker date="1558636746332" expanded="false" signature="6:63" ph="..." />
-            <marker date="1558636746332" expanded="true" signature="86:432" ph="{...}" />
-            <marker date="1558636746332" expanded="true" signature="113:430" ph="{...}" />
-            <marker date="1558636746332" expanded="true" signature="166:224" ph="{...}" />
-            <marker date="1558636746332" expanded="true" signature="285:424" ph="{...}" />
+            <marker date="1558640939439" expanded="false" signature="6:59" ph="..." />
+            <marker date="1558640939439" expanded="true" signature="94:589" ph="{...}" />
+            <marker date="1558640939439" expanded="true" signature="144:587" ph="{...}" />
+            <marker date="1558640939439" expanded="true" signature="286:358" ph="{...}" />
+            <marker date="1558640939439" expanded="true" signature="442:581" ph="{...}" />
           </folding>
         </state>
       </provider>
