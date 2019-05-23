@@ -20,21 +20,19 @@ namespace Library.API.Services
             _context.Authors.Add(author);
 
             // the repository fills the id (instead of using identity columns)
-            if (author.Books.Any())
-                foreach (var book in author.Books)
-                    book.Id = Guid.NewGuid();
+            if (!author.Books.Any()) return;
+            foreach (var book in author.Books)
+                book.Id = Guid.NewGuid();
         }
 
         public void AddBookForAuthor(Guid authorId, Book book)
         {
             var author = GetAuthor(authorId);
-            if (author != null)
-            {
-                // if there isn't an id filled out (ie: we're not upserting),
-                // we should generate one
-                if (book.Id == Guid.Empty) book.Id = Guid.NewGuid();
-                author.Books.Add(book);
-            }
+            if (author == null) return;
+            // if there isn't an id filled out (ie: we're not upserting),
+            // we should generate one
+            if (book.Id == Guid.Empty) book.Id = Guid.NewGuid();
+            author.Books.Add(book);
         }
 
         public bool AuthorExists(Guid authorId)
@@ -66,7 +64,7 @@ namespace Library.API.Services
         {
             return _context.Authors.Where(a => authorIds.Contains(a.Id))
                 .OrderBy(a => a.FirstName)
-                .OrderBy(a => a.LastName)
+                .ThenBy(a => a.LastName)
                 .ToList();
         }
 
@@ -77,8 +75,7 @@ namespace Library.API.Services
 
         public Book GetBookForAuthor(Guid authorId, Guid bookId)
         {
-            return _context.Books
-                .Where(b => b.AuthorId == authorId && b.Id == bookId).FirstOrDefault();
+            return _context.Books.FirstOrDefault(b => b.AuthorId == authorId && b.Id == bookId);
         }
 
         public IEnumerable<Book> GetBooksForAuthor(Guid authorId)

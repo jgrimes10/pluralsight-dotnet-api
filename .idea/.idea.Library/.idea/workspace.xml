@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="Add AuthorsController with GetAuthors method for getting all authors">
-      <change afterPath="$PROJECT_DIR$/src/Library.API/Models/AuthorDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.API/Entities/LibraryContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Entities/LibraryContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,18 +14,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            <state relative-caret-position="220">
+              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
               <folding>
-                <marker date="1558642867067" expanded="true" signature="6:151" ph="..." />
-                <marker date="1558642867067" expanded="true" signature="186:1177" ph="{...}" />
-                <marker date="1558642867067" expanded="true" signature="263:1175" ph="{...}" />
-                <marker date="1558642867067" expanded="true" signature="405:477" ph="{...}" />
-                <marker date="1558642867067" expanded="true" signature="538:886" ph="{...}" />
-                <marker date="1558642867067" expanded="true" signature="961:1169" ph="{...}" />
+                <marker date="1558643225652" expanded="true" signature="6:151" ph="..." />
+                <marker date="1558643225652" expanded="true" signature="186:1471" ph="{...}" />
+                <marker date="1558643225652" expanded="true" signature="263:1469" ph="{...}" />
+                <marker date="1558643225652" expanded="true" signature="405:477" ph="{...}" />
+                <marker date="1558643225652" expanded="true" signature="538:862" ph="{...}" />
+                <marker date="1558643225652" expanded="true" signature="937:1463" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <marker date="1558643734315" expanded="false" signature="6:94" ph="..." />
+                <marker date="1558643734315" expanded="true" signature="126:2750" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="184:2748" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="298:350" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="396:712" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="776:1095" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="885:984" ph="/* if there isn't an id filled out (ie: we're not upserting), ... */" />
+                <marker date="1558643734315" expanded="true" signature="1144:1228" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="1277:1342" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="1385:1446" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="1494:1589" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="1638:1745" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="1821:2025" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="2074:2140" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="2206:2323" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="2390:2528" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="2580:2646" ph="{...}" />
+                <marker date="1558643734315" expanded="true" signature="2674:2742" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Library.API/Entities/LibraryContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding>
+                <marker date="1558643682909" expanded="true" signature="68:370" ph="{...}" />
+                <marker date="1558643682909" expanded="true" signature="121:368" ph="{...}" />
+                <marker date="1558643682909" expanded="true" signature="211:263" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -41,7 +81,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Library.API/Models/AuthorDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Library.API/Entities/LibraryContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,6 +92,8 @@
         <option value="$PROJECT_DIR$/src/Library.API/Models/AuthorDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Startup.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Entities/LibraryContext.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs" />
       </list>
     </option>
   </component>
@@ -171,7 +215,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558639398686</updated>
-      <workItem from="1558639403373" duration="2789000" />
+      <workItem from="1558639403373" duration="3632000" />
     </task>
     <task id="LOCAL-00001" summary="Add AuthorsController with GetAuthors method for getting all authors">
       <created>1558641235734</created>
@@ -180,11 +224,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558641235734</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add AutoMapper nuget package&#10;Configure AutoMapper to map author entity to author dto">
+      <created>1558643229264</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558643229264</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2789000" />
+    <option name="totallyTimeSpent" value="3632000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -197,6 +248,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="158" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -205,15 +257,16 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.32934782" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32934782" />
       <window_info anchor="bottom" id="Unit Tests" />
       <window_info anchor="bottom" id="REST Client" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32934782" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Performance Profiler" />
-      <window_info anchor="bottom" id="Build" weight="0.32905984" />
+      <window_info anchor="bottom" id="Build" weight="0.32826087" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32934782" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32934782" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,7 +287,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Add AuthorsController with GetAuthors method for getting all authors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add AuthorsController with GetAuthors method for getting all authors" />
+    <MESSAGE value="Add AutoMapper nuget package&#10;Configure AutoMapper to map author entity to author dto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add AutoMapper nuget package&#10;Configure AutoMapper to map author entity to author dto" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -266,30 +320,69 @@
         <state relative-caret-position="395">
           <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding>
-            <marker date="1558642599974" expanded="true" signature="6:317" ph="..." />
-            <marker date="1558642599974" expanded="true" signature="340:2568" ph="{...}" />
-            <marker date="1558642599974" expanded="true" signature="367:2566" ph="{...}" />
-            <marker date="1558642599974" expanded="true" signature="481:545" ph="{...}" />
-            <marker date="1558642599974" expanded="true" signature="555:769" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1558642599974" expanded="true" signature="836:1458" ph="{...}" />
-            <marker date="1558642599974" expanded="true" signature="891:1147" ph="/* register the DbContext on the container, getting the connection string from ... */" />
-            <marker date="1558642599974" expanded="true" signature="1719:2560" ph="{...}" />
-            <marker date="1558642599974" expanded="true" signature="2031:2465" ph="{...}" />
+            <marker date="1558643225626" expanded="true" signature="6:362" ph="..." />
+            <marker date="1558643225626" expanded="true" signature="384:2582" ph="{...}" />
+            <marker date="1558643225626" expanded="true" signature="411:2580" ph="{...}" />
+            <marker date="1558643225626" expanded="true" signature="525:589" ph="{...}" />
+            <marker date="1558643225626" expanded="true" signature="599:813" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1558643225626" expanded="true" signature="880:1502" ph="{...}" />
+            <marker date="1558643225626" expanded="true" signature="935:1191" ph="/* register the DbContext on the container, getting the connection string from ... */" />
+            <marker date="1558643225626" expanded="true" signature="1763:2574" ph="{...}" />
+            <marker date="1558643225626" expanded="true" signature="2052:2479" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="220">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding>
-            <marker date="1558642867067" expanded="true" signature="6:151" ph="..." />
-            <marker date="1558642867067" expanded="true" signature="186:1177" ph="{...}" />
-            <marker date="1558642867067" expanded="true" signature="263:1175" ph="{...}" />
-            <marker date="1558642867067" expanded="true" signature="405:477" ph="{...}" />
-            <marker date="1558642867067" expanded="true" signature="538:886" ph="{...}" />
-            <marker date="1558642867067" expanded="true" signature="961:1169" ph="{...}" />
+            <marker date="1558643225652" expanded="true" signature="6:151" ph="..." />
+            <marker date="1558643225652" expanded="true" signature="186:1471" ph="{...}" />
+            <marker date="1558643225652" expanded="true" signature="263:1469" ph="{...}" />
+            <marker date="1558643225652" expanded="true" signature="405:477" ph="{...}" />
+            <marker date="1558643225652" expanded="true" signature="538:862" ph="{...}" />
+            <marker date="1558643225652" expanded="true" signature="937:1463" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Entities/LibraryContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <marker date="1558643682909" expanded="true" signature="68:370" ph="{...}" />
+            <marker date="1558643682909" expanded="true" signature="121:368" ph="{...}" />
+            <marker date="1558643682909" expanded="true" signature="211:263" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <marker date="1558643734315" expanded="false" signature="6:94" ph="..." />
+            <marker date="1558643734315" expanded="true" signature="126:2750" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="184:2748" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="298:350" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="396:712" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="776:1095" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="885:984" ph="/* if there isn't an id filled out (ie: we're not upserting), ... */" />
+            <marker date="1558643734315" expanded="true" signature="1144:1228" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="1277:1342" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="1385:1446" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="1494:1589" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="1638:1745" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="1821:2025" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="2074:2140" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="2206:2323" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="2390:2528" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="2580:2646" ph="{...}" />
+            <marker date="1558643734315" expanded="true" signature="2674:2742" ph="{...}" />
           </folding>
         </state>
       </provider>

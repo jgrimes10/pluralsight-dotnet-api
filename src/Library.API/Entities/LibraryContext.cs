@@ -2,9 +2,9 @@
 
 namespace Library.API.Entities
 {
-    public class LibraryContext : DbContext
+    public sealed class LibraryContext : DbContext
     {
-        public LibraryContext(DbContextOptions<LibraryContext> options)
+        public LibraryContext(DbContextOptions options)
             : base(options)
         {
             Database.Migrate();
