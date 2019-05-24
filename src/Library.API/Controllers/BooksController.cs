@@ -4,6 +4,7 @@ using AutoMapper;
 using Library.API.Entities;
 using Library.API.Models;
 using Library.API.Services;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.API.Controllers
@@ -131,6 +132,63 @@ namespace Library.API.Controllers
 
             // make sure changes saved to db are successful
             if (!_libraryRepository.Save()) throw new Exception($"Updating book {id} for author {id} failed on save.");
+
+            return NoContent();
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult PartiallyUpdateBookForAuthor(Guid authorId, Guid id,
+            [FromBody] JsonPatchDocument<BookForUpdateDto> patchDocument)
+        {
+            // make sure information could be parsed from request body
+            if (patchDocument == null) return BadRequest();
+
+            // make sure the author exists
+            if (!_libraryRepository.AuthorExists(authorId)) return NotFound();
+
+            // get the book for the author
+            var bookForAuthorFromRepo = _libraryRepository.GetBookForAuthor(authorId, id);
+            // make sure the book was found
+            if (bookForAuthorFromRepo == null)
+            {
+                // book with id not found, upsert instead
+                var bookDto = new BookForUpdateDto();
+                // apply patch document to new book
+                patchDocument.ApplyTo(bookDto);
+
+                // map from bookDto to entity
+                var bookToAdd = Mapper.Map<Book>(bookDto);
+                // set the books id to whats found in the url route
+                bookToAdd.Id = id;
+
+                // save book to context
+                _libraryRepository.AddBookForAuthor(authorId, bookToAdd);
+
+                // save changes to db
+                if (!_libraryRepository.Save())
+                    throw new Exception($"Upserting book {id} for author {authorId} failed on save.");
+                // map entity to bookDto
+                var bookToReturn = Mapper.Map<BookDto>(bookToAdd);
+                return CreatedAtRoute("GetBookForAuthor", new {authorId, id = bookToReturn.Id},
+                    bookToReturn);
+            }
+
+            // map entity to BookForUpdateDto
+            var bookToPatch = Mapper.Map<BookForUpdateDto>(bookForAuthorFromRepo);
+
+            // apply the patch document
+            patchDocument.ApplyTo(bookToPatch);
+
+            // add validation
+
+            // map from dto to entity, update, and map back to dto
+            Mapper.Map(bookToPatch, bookForAuthorFromRepo);
+            // update the book in the context
+            _libraryRepository.UpdateBookForAuthor(bookForAuthorFromRepo);
+
+            // make sure changes saved to db are successful
+            if (!_libraryRepository.Save())
+                throw new Exception($"Patching book {id} for author {authorId} failed on save.");
 
             return NoContent();
         }

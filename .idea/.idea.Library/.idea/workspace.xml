@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Controllers/AuthorCollectionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Controllers/AuthorCollectionsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Startup.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,22 +18,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="112" column="40" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+            <state relative-caret-position="125">
+              <caret line="176" column="38" selection-start-line="176" selection-start-column="38" selection-end-line="176" selection-end-column="38" />
               <folding>
-                <marker date="1558722684821" expanded="true" signature="6:179" ph="..." />
-                <marker date="1558722684821" expanded="true" signature="214:4748" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="306:4746" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="446:518" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="599:1031" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="1155:1634" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="1754:2618" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="2721:3429" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="3563:4740" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="3673:3738" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="4086:4206" ph="{...}" />
-                <marker date="1558722684821" expanded="true" signature="4117:4192" ph="/* if it wasn't found... create it ... */" />
-                <marker date="1558722684821" expanded="true" signature="4577:4697" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="6:217" ph="..." />
+                <marker date="1558725891648" expanded="true" signature="252:7755" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="344:7753" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="484:556" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="637:1069" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="1193:1672" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="1792:2656" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="2759:3467" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="3601:5249" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="4080:4783" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="4111:4186" ph="/* if it wasn't found... create it ... */" />
+                <marker date="1558725891648" expanded="true" signature="5434:7747" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="5554:5619" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="5980:6950" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="6649:6788" ph="{...}" />
+                <marker date="1558725891648" expanded="true" signature="7207:7292" ph="/* add validation ... */" />
+                <marker date="1558725891648" expanded="true" signature="7578:7704" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -202,7 +205,7 @@
       <workItem from="1558639403373" duration="3818000" />
       <workItem from="1558701308129" duration="11112000" />
       <workItem from="1558717452191" duration="54000" />
-      <workItem from="1558717531200" duration="4448000" />
+      <workItem from="1558717531200" duration="6534000" />
     </task>
     <task id="LOCAL-00001" summary="Add AuthorsController with GetAuthors method for getting all authors">
       <created>1558641235734</created>
@@ -260,11 +263,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558720427884</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add UPSERT ability on PUT requests for books&#10;Forbid usage of DELETE on author collections">
+      <created>1558722989822</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558722989822</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19432000" />
+    <option name="totallyTimeSpent" value="21518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,7 +333,8 @@
     <MESSAGE value="Add ability for POST to accept XML requests too" />
     <MESSAGE value="Add ability to DELETE book from an author" />
     <MESSAGE value="Add ability to DELETE an author (along with all books associated)&#10;Add more comments in code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ability to DELETE an author (along with all books associated)&#10;Add more comments in code" />
+    <MESSAGE value="Add UPSERT ability on PUT requests for books&#10;Forbid usage of DELETE on author collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add UPSERT ability on PUT requests for books&#10;Forbid usage of DELETE on author collections" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -515,43 +526,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Library.API/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+        <state relative-caret-position="474">
+          <caret line="78" column="56" selection-start-line="78" selection-start-column="56" selection-end-line="78" selection-end-column="56" />
           <folding>
-            <marker date="1558721970225" expanded="true" signature="6:469" ph="..." />
-            <marker date="1558721970225" expanded="true" signature="492:3613" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="519:3611" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="633:697" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="707:921" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1558721970225" expanded="true" signature="988:1922" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="1054:1339" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="1355:1611" ph="/* register the DbContext on the container, getting the connection string from ... */" />
-            <marker date="1558721970225" expanded="true" signature="2183:3605" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="2367:2651" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="2441:2631" ph="{...}" />
-            <marker date="1558721970225" expanded="true" signature="2786:3510" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="6:469" ph="..." />
+            <marker date="1558725132826" expanded="true" signature="492:3670" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="519:3668" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="633:697" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="707:921" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1558725132826" expanded="true" signature="988:1922" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="1054:1339" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="1355:1611" ph="/* register the DbContext on the container, getting the connection string from ... */" />
+            <marker date="1558725132826" expanded="true" signature="2183:3662" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="2367:2651" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="2441:2631" ph="{...}" />
+            <marker date="1558725132826" expanded="true" signature="2786:3567" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="112" column="40" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+        <state relative-caret-position="125">
+          <caret line="176" column="38" selection-start-line="176" selection-start-column="38" selection-end-line="176" selection-end-column="38" />
           <folding>
-            <marker date="1558722684821" expanded="true" signature="6:179" ph="..." />
-            <marker date="1558722684821" expanded="true" signature="214:4748" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="306:4746" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="446:518" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="599:1031" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="1155:1634" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="1754:2618" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="2721:3429" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="3563:4740" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="3673:3738" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="4086:4206" ph="{...}" />
-            <marker date="1558722684821" expanded="true" signature="4117:4192" ph="/* if it wasn't found... create it ... */" />
-            <marker date="1558722684821" expanded="true" signature="4577:4697" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="6:217" ph="..." />
+            <marker date="1558725891648" expanded="true" signature="252:7755" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="344:7753" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="484:556" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="637:1069" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="1193:1672" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="1792:2656" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="2759:3467" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="3601:5249" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="4080:4783" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="4111:4186" ph="/* if it wasn't found... create it ... */" />
+            <marker date="1558725891648" expanded="true" signature="5434:7747" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="5554:5619" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="5980:6950" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="6649:6788" ph="{...}" />
+            <marker date="1558725891648" expanded="true" signature="7207:7292" ph="/* add validation ... */" />
+            <marker date="1558725891648" expanded="true" signature="7578:7704" ph="{...}" />
           </folding>
         </state>
       </provider>
