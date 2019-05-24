@@ -66,5 +66,13 @@ namespace Library.API.Controllers
 
             return CreatedAtRoute("GetAuthor", new {id = authorToReturn.Id}, authorToReturn);
         }
+
+        [HttpPost("{id}")]
+        public IActionResult BlockAuthorCreation(Guid id)
+        {
+            if (_libraryRepository.AuthorExists(id)) return Conflict();
+
+            return NotFound();
+        }
     }
 }
