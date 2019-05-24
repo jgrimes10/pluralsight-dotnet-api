@@ -13,7 +13,9 @@
           <e p="appsettings.json" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="Controllers" t="Include">
+            <e p="AuthorCollectionsController.cs" t="Include" />
             <e p="AuthorsController.cs" t="Include" />
+            <e p="BooksController.cs" t="Include" />
           </e>
           <e p="Entities" t="Include">
             <e p="Author.cs" t="Include" />
@@ -22,6 +24,7 @@
             <e p="LibraryContextExtensions.cs" t="Include" />
           </e>
           <e p="Helpers" t="Include">
+            <e p="ArrayModelBinder.cs" t="Include" />
             <e p="DateTimeOffsetExtensions.cs" t="Include" />
           </e>
           <e p="Library.API.csproj" t="IncludeRecursive" />
@@ -32,6 +35,9 @@
           </e>
           <e p="Models" t="Include">
             <e p="AuthorDto.cs" t="Include" />
+            <e p="AuthorForCreationDto.cs" t="Include" />
+            <e p="BookDto.cs" t="Include" />
+            <e p="BookForCreationDto.cs" t="Include" />
           </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">

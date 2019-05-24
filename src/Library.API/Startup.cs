@@ -5,6 +5,8 @@ using Library.API.Models;
 using Library.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,7 +27,11 @@ namespace Library.API
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(setupAction =>
+            {
+                setupAction.ReturnHttpNotAcceptable = true;
+                setupAction.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+            });
 
             // register the DbContext on the container, getting the connection string from
             // appSettings (note: use this during development; in a production environment,
@@ -44,7 +50,14 @@ namespace Library.API
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
             else
-                app.UseExceptionHandler();
+                app.UseExceptionHandler(appBuilder =>
+                {
+                    appBuilder.Run(async context =>
+                    {
+                        context.Response.StatusCode = 500;
+                        await context.Response.WriteAsync("An unexpected error occured. Try again later.");
+                    });
+                });
 
             // create an auto mapper map from the author entity to the author DTO
             Mapper.Initialize(cfg =>
@@ -53,8 +66,13 @@ namespace Library.API
                     // map the first & last name to a name variable that concatenates them
                     .ForMember(dest => dest.Name, opt => opt.MapFrom(src =>
                         $"{src.FirstName} {src.LastName}"))
+                    // map the authors DoB to just their current age
                     .ForMember(dest => dest.Age, opt => opt.MapFrom(src =>
                         src.DateOfBirth.GetCurrentAge()));
+
+                cfg.CreateMap<Book, BookDto>();
+                cfg.CreateMap<AuthorForCreationDto, Author>();
+                cfg.CreateMap<BookForCreationDto, Book>();
             });
 
             libraryContext.EnsureSeedDataForContext();
