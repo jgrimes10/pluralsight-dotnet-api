@@ -70,9 +70,26 @@ namespace Library.API.Controllers
         [HttpPost("{id}")]
         public IActionResult BlockAuthorCreation(Guid id)
         {
+            // stop post requests for an author that already exists
             if (_libraryRepository.AuthorExists(id)) return Conflict();
 
             return NotFound();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteAuthor(Guid id)
+        {
+            // get the author
+            var authorFromRepo = _libraryRepository.GetAuthor(id);
+            // make sure an author was found
+            if (authorFromRepo == null) return NotFound();
+
+            // delete the author
+            _libraryRepository.DeleteAuthor(authorFromRepo);
+            // make sure the save was successful
+            if (!_libraryRepository.Save()) throw new Exception($"Deleting author {id} failed on save.");
+
+            return NoContent();
         }
     }
 }
