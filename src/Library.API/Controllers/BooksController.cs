@@ -71,5 +71,26 @@ namespace Library.API.Controllers
                 new {authorId, id = bookToReturn.Id},
                 bookToReturn);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBookForAuthor(Guid authorId, Guid id)
+        {
+            // make sure the author exists
+            if (!_libraryRepository.AuthorExists(authorId)) return NotFound();
+
+            // get the book for the author
+            var bookForAuthorFromRepo = _libraryRepository.GetBookForAuthor(authorId, id);
+            // make sure the book was found
+            if (bookForAuthorFromRepo == null) return NotFound();
+
+            // delete the book
+            _libraryRepository.DeleteBook(bookForAuthorFromRepo);
+
+            // make sure the changes get saved
+            if (!_libraryRepository.Save())
+                throw new Exception($"Deleting book {id} for author {authorId} failed on save.");
+
+            return NoContent();
+        }
     }
 }
