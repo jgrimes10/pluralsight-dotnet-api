@@ -92,5 +92,47 @@ namespace Library.API.Controllers
 
             return NoContent();
         }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateBookForAuthor(Guid authorId, Guid id, [FromBody] BookForUpdateDto book)
+        {
+            // make sure book could be deserialized from request body
+            if (book == null) return BadRequest();
+            // make sure the author exists
+            if (!_libraryRepository.AuthorExists(authorId)) return NotFound();
+
+            // get the book for the author
+            var bookForAuthorFromRepo = _libraryRepository.GetBookForAuthor(authorId, id);
+            // make sure the book was found
+            if (bookForAuthorFromRepo == null)
+            {
+                // if it wasn't found... create it
+                // map BookDto to entity
+                var bookToAdd = Mapper.Map<Book>(book);
+                bookToAdd.Id = id;
+
+                _libraryRepository.AddBookForAuthor(authorId, bookToAdd);
+
+                if (!_libraryRepository.Save())
+                    throw new Exception($"Upserting book {id} for author {authorId} failed on save.");
+
+                // map the entity to BookDto
+                var bookToReturn = Mapper.Map<BookDto>(bookToAdd);
+
+                return CreatedAtRoute("GetBookForAuthor",
+                    new {authorId, id = bookToReturn.Id},
+                    bookToReturn);
+            }
+
+            // map from dto to entity, update, and map back to dto
+            Mapper.Map(book, bookForAuthorFromRepo);
+            // update the book in the context
+            _libraryRepository.UpdateBookForAuthor(bookForAuthorFromRepo);
+
+            // make sure changes saved to db are successful
+            if (!_libraryRepository.Save()) throw new Exception($"Updating book {id} for author {id} failed on save.");
+
+            return NoContent();
+        }
     }
 }

@@ -59,5 +59,11 @@ namespace Library.API.Controllers
             var authorsToReturn = Mapper.Map<IEnumerable<AuthorDto>>(authorEntities);
             return Ok(authorsToReturn);
         }
+
+        [HttpDelete("({ids})")]
+        public IActionResult Delete()
+        {
+            return StatusCode(405);
+        }
     }
 }
