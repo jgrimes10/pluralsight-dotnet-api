@@ -55,6 +55,15 @@ namespace Library.API.Controllers
             // make sure the book could be serialized from request body
             if (book == null) return BadRequest();
 
+            // ensure book's title is different than its description
+            if (book.Description == book.Title)
+                ModelState.AddModelError(nameof(BookForCreationDto),
+                    "The provided description should be different from the title.");
+
+            // make sure the input is valid
+            // if not return 422 - unprocessable 
+            if (!ModelState.IsValid) return new UnprocessableEntityObjectResult(ModelState);
+
             // make sure the author to which the book is being added exists
             if (!_libraryRepository.AuthorExists(authorId)) return NotFound();
 

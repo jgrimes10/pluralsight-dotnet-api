@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="Add BookForUpdateDto">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,35 +15,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="176" column="38" selection-start-line="176" selection-start-column="38" selection-end-line="176" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="61" column="84" lean-forward="true" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
               <folding>
-                <marker date="1558725891648" expanded="true" signature="6:217" ph="..." />
-                <marker date="1558725891648" expanded="true" signature="252:7755" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="344:7753" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="484:556" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="637:1069" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="1193:1672" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="1792:2656" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="2759:3467" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="3601:5249" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="4080:4783" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="4111:4186" ph="/* if it wasn't found... create it ... */" />
-                <marker date="1558725891648" expanded="true" signature="5434:7747" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="5554:5619" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="5980:6950" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="6649:6788" ph="{...}" />
-                <marker date="1558725891648" expanded="true" signature="7207:7292" ph="/* add validation ... */" />
-                <marker date="1558725891648" expanded="true" signature="7578:7704" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="6:217" ph="..." />
+                <marker date="1559053282374" expanded="true" signature="252:8182" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="344:8180" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="484:556" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="637:1069" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="1193:1672" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="1792:3168" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="2055:2237" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="2263:2344" ph="/* make sure the input is valid ... */" />
+                <marker date="1559053282374" expanded="true" signature="3271:3979" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="4113:5761" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="4592:5295" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="4623:4698" ph="/* if it wasn't found... create it ... */" />
+                <marker date="1559053282374" expanded="true" signature="5946:8174" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="6436:7429" ph="{...}" />
+                <marker date="1559053282374" expanded="true" signature="7662:7747" ph="/* add validation ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding>
+                <marker date="1558721018437" expanded="true" signature="28:168" ph="{...}" />
+                <marker date="1558721018437" expanded="true" signature="64:166" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="96" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
+              <folding>
+                <marker date="1559053128046" expanded="true" signature="74:485" ph="{...}" />
+                <marker date="1559053128046" expanded="true" signature="112:483" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>createbookfor</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,6 +89,7 @@
     <setting file="file://$PROJECT_DIR$/src/Library.API/Models/BookDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Models/AuthorForCreationDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Library.API/Entities/Book.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorCollectionsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,7 +103,6 @@
         <option value="$PROJECT_DIR$/src/Library.API/Services/LibraryRepository.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/src/Library.API/Models/BookDto.cs" />
-        <option value="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Models/AuthorForCreationDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/AuthorsCollectionController.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Helpers/ArrayModelBinder.cs" />
@@ -80,6 +110,8 @@
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/AuthorCollectionsController.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Startup.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Helpers/UnprocessableEntityObjectResult.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" />
       </list>
     </option>
@@ -124,6 +156,13 @@
               <item name="src" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Library.API" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Library" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Library.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Helpers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
@@ -205,7 +244,7 @@
       <workItem from="1558639403373" duration="3818000" />
       <workItem from="1558701308129" duration="11112000" />
       <workItem from="1558717452191" duration="54000" />
-      <workItem from="1558717531200" duration="6534000" />
+      <workItem from="1558717531200" duration="9065000" />
     </task>
     <task id="LOCAL-00001" summary="Add AuthorsController with GetAuthors method for getting all authors">
       <created>1558641235734</created>
@@ -270,11 +309,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558722989822</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add ability to send PATCH requests">
+      <created>1558726109386</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558726109386</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add BookForUpdateDto">
+      <created>1559052128456</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559052128456</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21518000" />
+    <option name="totallyTimeSpent" value="24049000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,12 +342,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32826087" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32826087" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,7 +387,9 @@
     <MESSAGE value="Add ability to DELETE book from an author" />
     <MESSAGE value="Add ability to DELETE an author (along with all books associated)&#10;Add more comments in code" />
     <MESSAGE value="Add UPSERT ability on PUT requests for books&#10;Forbid usage of DELETE on author collections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UPSERT ability on PUT requests for books&#10;Forbid usage of DELETE on author collections" />
+    <MESSAGE value="Add ability to send PATCH requests" />
+    <MESSAGE value="Add BookForUpdateDto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BookForUpdateDto" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -376,17 +431,6 @@
           <folding>
             <marker date="1558702499210" expanded="true" signature="43:254" ph="{...}" />
             <marker date="1558702499210" expanded="true" signature="70:252" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding>
-            <marker date="1558710033898" expanded="true" signature="28:170" ph="{...}" />
-            <marker date="1558710033898" expanded="true" signature="66:168" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -513,17 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <marker date="1558721018437" expanded="true" signature="28:168" ph="{...}" />
-            <marker date="1558721018437" expanded="true" signature="64:166" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Library.API/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -545,28 +578,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Entities/Book.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <marker date="1558636361575" expanded="false" signature="6:110" ph="..." />
+            <marker date="1558636361575" expanded="true" signature="142:473" ph="{...}" />
+            <marker date="1558636361575" expanded="true" signature="166:471" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Helpers/UnprocessableEntityObjectResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="96" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
+          <folding>
+            <marker date="1559053128046" expanded="true" signature="74:485" ph="{...}" />
+            <marker date="1559053128046" expanded="true" signature="112:483" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="176" column="38" selection-start-line="176" selection-start-column="38" selection-end-line="176" selection-end-column="38" />
+        <state relative-caret-position="120">
+          <caret line="61" column="84" lean-forward="true" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
           <folding>
-            <marker date="1558725891648" expanded="true" signature="6:217" ph="..." />
-            <marker date="1558725891648" expanded="true" signature="252:7755" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="344:7753" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="484:556" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="637:1069" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="1193:1672" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="1792:2656" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="2759:3467" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="3601:5249" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="4080:4783" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="4111:4186" ph="/* if it wasn't found... create it ... */" />
-            <marker date="1558725891648" expanded="true" signature="5434:7747" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="5554:5619" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="5980:6950" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="6649:6788" ph="{...}" />
-            <marker date="1558725891648" expanded="true" signature="7207:7292" ph="/* add validation ... */" />
-            <marker date="1558725891648" expanded="true" signature="7578:7704" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="6:217" ph="..." />
+            <marker date="1559053282374" expanded="true" signature="252:8182" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="344:8180" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="484:556" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="637:1069" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="1193:1672" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="1792:3168" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="2055:2237" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="2263:2344" ph="/* make sure the input is valid ... */" />
+            <marker date="1559053282374" expanded="true" signature="3271:3979" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="4113:5761" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="4592:5295" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="4623:4698" ph="/* if it wasn't found... create it ... */" />
+            <marker date="1559053282374" expanded="true" signature="5946:8174" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="6436:7429" ph="{...}" />
+            <marker date="1559053282374" expanded="true" signature="7662:7747" ph="/* add validation ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <marker date="1558721018437" expanded="true" signature="28:168" ph="{...}" />
+            <marker date="1558721018437" expanded="true" signature="64:166" ph="{...}" />
           </folding>
         </state>
       </provider>
