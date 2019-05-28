@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="Add BookForUpdateDto">
+    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,54 +15,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="61" column="84" lean-forward="true" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
+              <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
               <folding>
-                <marker date="1559053282374" expanded="true" signature="6:217" ph="..." />
-                <marker date="1559053282374" expanded="true" signature="252:8182" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="344:8180" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="484:556" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="637:1069" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="1193:1672" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="1792:3168" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="2055:2237" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="2263:2344" ph="/* make sure the input is valid ... */" />
-                <marker date="1559053282374" expanded="true" signature="3271:3979" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="4113:5761" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="4592:5295" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="4623:4698" ph="/* if it wasn't found... create it ... */" />
-                <marker date="1559053282374" expanded="true" signature="5946:8174" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="6436:7429" ph="{...}" />
-                <marker date="1559053282374" expanded="true" signature="7662:7747" ph="/* add validation ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <marker date="1558721018437" expanded="true" signature="28:168" ph="{...}" />
-                <marker date="1558721018437" expanded="true" signature="64:166" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="96" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
-              <folding>
-                <marker date="1559053128046" expanded="true" signature="74:485" ph="{...}" />
-                <marker date="1559053128046" expanded="true" signature="112:483" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="6:217" ph="..." />
+                <marker date="1559053706224" expanded="true" signature="252:8130" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="344:8128" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="484:556" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="637:1069" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="1193:1672" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="1792:3116" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="2211:2292" ph="/* make sure the input is valid ... */" />
+                <marker date="1559053706224" expanded="true" signature="3219:3927" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="4061:5709" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="4540:5243" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="4571:4646" ph="/* if it wasn't found... create it ... */" />
+                <marker date="1559053706224" expanded="true" signature="5894:8122" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="6384:7377" ph="{...}" />
+                <marker date="1559053706224" expanded="true" signature="7610:7695" ph="/* add validation ... */" />
               </folding>
             </state>
           </provider>
@@ -91,6 +64,7 @@
     <setting file="file://$PROJECT_DIR$/src/Library.API/Models/AuthorForCreationDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Entities/Book.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Library.API/Models/BookForManipulationDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorCollectionsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Library.API/Helpers/ArrayModelBinder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,11 +82,12 @@
         <option value="$PROJECT_DIR$/src/Library.API/Helpers/ArrayModelBinder.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/AuthorsController.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/AuthorCollectionsController.cs" />
-        <option value="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Startup.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Helpers/UnprocessableEntityObjectResult.cs" />
-        <option value="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Models/BookForManipulationDto.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" />
       </list>
     </option>
   </component>
@@ -244,7 +219,7 @@
       <workItem from="1558639403373" duration="3818000" />
       <workItem from="1558701308129" duration="11112000" />
       <workItem from="1558717452191" duration="54000" />
-      <workItem from="1558717531200" duration="9065000" />
+      <workItem from="1558717531200" duration="10147000" />
     </task>
     <task id="LOCAL-00001" summary="Add AuthorsController with GetAuthors method for getting all authors">
       <created>1558641235734</created>
@@ -323,11 +298,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559052128456</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add validation to bookforauthorcreation">
+      <created>1559053709594</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559053709594</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24049000" />
+    <option name="totallyTimeSpent" value="25131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,7 +324,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -355,7 +337,7 @@
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.32905984" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32826087" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32826087" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32934782" />
       <window_info anchor="bottom" id="Unit Tests" order="13" />
@@ -389,7 +371,8 @@
     <MESSAGE value="Add UPSERT ability on PUT requests for books&#10;Forbid usage of DELETE on author collections" />
     <MESSAGE value="Add ability to send PATCH requests" />
     <MESSAGE value="Add BookForUpdateDto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add BookForUpdateDto" />
+    <MESSAGE value="Add validation to bookforauthorcreation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add validation to bookforauthorcreation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -599,36 +582,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="96" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <marker date="1559053128046" expanded="true" signature="74:485" ph="{...}" />
-            <marker date="1559053128046" expanded="true" signature="112:483" ph="{...}" />
+            <marker date="1559056173394" expanded="true" signature="74:152" ph="{...}" />
+            <marker date="1559056173394" expanded="true" signature="137:150" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForManipulationDto.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="61" column="84" lean-forward="true" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
+        <state relative-caret-position="264">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
-            <marker date="1559053282374" expanded="true" signature="6:217" ph="..." />
-            <marker date="1559053282374" expanded="true" signature="252:8182" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="344:8180" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="484:556" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="637:1069" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="1193:1672" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="1792:3168" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="2055:2237" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="2263:2344" ph="/* make sure the input is valid ... */" />
-            <marker date="1559053282374" expanded="true" signature="3271:3979" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="4113:5761" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="4592:5295" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="4623:4698" ph="/* if it wasn't found... create it ... */" />
-            <marker date="1559053282374" expanded="true" signature="5946:8174" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="6436:7429" ph="{...}" />
-            <marker date="1559053282374" expanded="true" signature="7662:7747" ph="/* add validation ... */" />
+            <marker date="1559056187469" expanded="true" signature="74:498" ph="{...}" />
+            <marker date="1559056187469" expanded="true" signature="125:496" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -636,10 +605,34 @@
     <entry file="file://$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding>
-            <marker date="1558721018437" expanded="true" signature="28:168" ph="{...}" />
-            <marker date="1558721018437" expanded="true" signature="64:166" ph="{...}" />
+            <marker date="1559056228143" expanded="true" signature="74:278" ph="{...}" />
+            <marker date="1559056228143" expanded="true" signature="135:276" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+          <folding>
+            <marker date="1559053706224" expanded="true" signature="6:217" ph="..." />
+            <marker date="1559053706224" expanded="true" signature="252:8130" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="344:8128" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="484:556" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="637:1069" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="1193:1672" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="1792:3116" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="2211:2292" ph="/* make sure the input is valid ... */" />
+            <marker date="1559053706224" expanded="true" signature="3219:3927" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="4061:5709" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="4540:5243" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="4571:4646" ph="/* if it wasn't found... create it ... */" />
+            <marker date="1559053706224" expanded="true" signature="5894:8122" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="6384:7377" ph="{...}" />
+            <marker date="1559053706224" expanded="true" signature="7610:7695" ph="/* add validation ... */" />
           </folding>
         </state>
       </provider>
