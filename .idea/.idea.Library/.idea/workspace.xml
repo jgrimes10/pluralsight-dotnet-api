@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="">
+    <list default="true" id="47454aa7-1a1e-426d-9591-d396cf5f8f84" name="Default Changelist" comment="Add validation to bookforauthorupdate">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Library/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Library.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,24 +17,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+            <state relative-caret-position="245">
+              <caret line="188" column="73" selection-start-line="188" selection-start-column="73" selection-end-line="188" selection-end-column="73" />
               <folding>
-                <marker date="1559053706224" expanded="true" signature="6:217" ph="..." />
-                <marker date="1559053706224" expanded="true" signature="252:8130" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="344:8128" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="484:556" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="637:1069" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="1193:1672" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="1792:3116" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="2211:2292" ph="/* make sure the input is valid ... */" />
-                <marker date="1559053706224" expanded="true" signature="3219:3927" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="4061:5709" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="4540:5243" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="4571:4646" ph="/* if it wasn't found... create it ... */" />
-                <marker date="1559053706224" expanded="true" signature="5894:8122" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="6384:7377" ph="{...}" />
-                <marker date="1559053706224" expanded="true" signature="7610:7695" ph="/* add validation ... */" />
+                <marker date="1559057002981" expanded="true" signature="6:217" ph="..." />
+                <marker date="1559057002981" expanded="true" signature="252:9584" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="344:9582" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="484:556" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="637:1069" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="1193:1672" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="1792:3116" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="2211:2292" ph="/* make sure the input is valid ... */" />
+                <marker date="1559057002981" expanded="true" signature="3219:3927" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="4061:6168" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="4476:4557" ph="/* make sure the input is valid ... */" />
+                <marker date="1559057002981" expanded="true" signature="4999:5702" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="5030:5105" ph="/* if it wasn't found... create it ... */" />
+                <marker date="1559057002981" expanded="true" signature="6353:9576" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="6843:8335" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="7174:7370" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="7456:7568" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="8631:8811" ph="{...}" />
+                <marker date="1559057002981" expanded="true" signature="9064:9149" ph="/* add validation ... */" />
               </folding>
             </state>
           </provider>
@@ -46,6 +49,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>createbookfor</find>
+      <find>partial</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,10 +88,10 @@
         <option value="$PROJECT_DIR$/src/Library.API/Controllers/AuthorCollectionsController.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Startup.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Helpers/UnprocessableEntityObjectResult.cs" />
-        <option value="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Models/BookForCreationDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Models/BookForManipulationDto.cs" />
         <option value="$PROJECT_DIR$/src/Library.API/Models/BookForUpdateDto.cs" />
+        <option value="$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs" />
       </list>
     </option>
   </component>
@@ -219,7 +223,7 @@
       <workItem from="1558639403373" duration="3818000" />
       <workItem from="1558701308129" duration="11112000" />
       <workItem from="1558717452191" duration="54000" />
-      <workItem from="1558717531200" duration="10147000" />
+      <workItem from="1558717531200" duration="10971000" />
     </task>
     <task id="LOCAL-00001" summary="Add AuthorsController with GetAuthors method for getting all authors">
       <created>1558641235734</created>
@@ -305,11 +309,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559053709594</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add validation to bookforauthorupdate">
+      <created>1559056504871</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1559056504871</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25131000" />
+    <option name="totallyTimeSpent" value="25955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,7 +333,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -372,7 +382,8 @@
     <MESSAGE value="Add ability to send PATCH requests" />
     <MESSAGE value="Add BookForUpdateDto" />
     <MESSAGE value="Add validation to bookforauthorcreation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add validation to bookforauthorcreation" />
+    <MESSAGE value="Add validation to bookforauthorupdate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add validation to bookforauthorupdate" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -585,8 +596,8 @@
         <state relative-caret-position="144">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <marker date="1559056173394" expanded="true" signature="74:152" ph="{...}" />
-            <marker date="1559056173394" expanded="true" signature="137:150" ph="{...}" />
+            <marker date="1559056501551" expanded="true" signature="28:105" ph="{...}" />
+            <marker date="1559056501551" expanded="true" signature="91:103" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -615,24 +626,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Library.API/Controllers/BooksController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+        <state relative-caret-position="245">
+          <caret line="188" column="73" selection-start-line="188" selection-start-column="73" selection-end-line="188" selection-end-column="73" />
           <folding>
-            <marker date="1559053706224" expanded="true" signature="6:217" ph="..." />
-            <marker date="1559053706224" expanded="true" signature="252:8130" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="344:8128" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="484:556" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="637:1069" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="1193:1672" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="1792:3116" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="2211:2292" ph="/* make sure the input is valid ... */" />
-            <marker date="1559053706224" expanded="true" signature="3219:3927" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="4061:5709" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="4540:5243" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="4571:4646" ph="/* if it wasn't found... create it ... */" />
-            <marker date="1559053706224" expanded="true" signature="5894:8122" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="6384:7377" ph="{...}" />
-            <marker date="1559053706224" expanded="true" signature="7610:7695" ph="/* add validation ... */" />
+            <marker date="1559057002981" expanded="true" signature="6:217" ph="..." />
+            <marker date="1559057002981" expanded="true" signature="252:9584" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="344:9582" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="484:556" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="637:1069" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="1193:1672" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="1792:3116" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="2211:2292" ph="/* make sure the input is valid ... */" />
+            <marker date="1559057002981" expanded="true" signature="3219:3927" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="4061:6168" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="4476:4557" ph="/* make sure the input is valid ... */" />
+            <marker date="1559057002981" expanded="true" signature="4999:5702" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="5030:5105" ph="/* if it wasn't found... create it ... */" />
+            <marker date="1559057002981" expanded="true" signature="6353:9576" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="6843:8335" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="7174:7370" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="7456:7568" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="8631:8811" ph="{...}" />
+            <marker date="1559057002981" expanded="true" signature="9064:9149" ph="/* add validation ... */" />
           </folding>
         </state>
       </provider>
