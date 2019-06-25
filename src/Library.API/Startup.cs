@@ -16,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Library.API
 {
@@ -37,6 +38,19 @@ namespace Library.API
                 setupAction.ReturnHttpNotAcceptable = true;
                 setupAction.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 setupAction.InputFormatters.Add(new XmlDataContractSerializerInputFormatter(new MvcOptions()));
+            });
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "Library RESTful API",
+                    Description = "Pluralsight Course: Building a RESTful API with ASP.NET Core",
+                    TermsOfService = "None",
+                    Contact = new Contact()
+                        {Name = "Justin Grimes", Email = "j_grimes@hotmail.com", Url = "info@justingrimes.dev"}
+                });
             });
 
             // register the DbContext on the container, getting the connection string from
@@ -107,6 +121,8 @@ namespace Library.API
             libraryContext.EnsureSeedDataForContext();
 
             app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Library API v1"); });
         }
     }
 }
