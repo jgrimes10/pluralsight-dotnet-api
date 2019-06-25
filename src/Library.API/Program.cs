@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using NLog.Web;
 
 namespace Library.API
 {
@@ -14,6 +15,7 @@ namespace Library.API
         {
             return WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseNLog()
                 .Build();
         }
     }

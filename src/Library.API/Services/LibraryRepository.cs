@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Library.API.Entities;
+using Library.API.Helpers;
 
 namespace Library.API.Services
 {
@@ -55,9 +56,43 @@ namespace Library.API.Services
             return _context.Authors.FirstOrDefault(a => a.Id == authorId);
         }
 
-        public IEnumerable<Author> GetAuthors()
+        public PagedList<Author> GetAuthors(AuthorsResourceParameters authorsResourceParameters)
         {
-            return _context.Authors.OrderBy(a => a.FirstName).ThenBy(a => a.LastName);
+            // all of the items
+            var collectionBeforePaging = _context.Authors
+                .OrderBy(a => a.FirstName)
+                .ThenBy(a => a.LastName).AsQueryable();
+
+            // take filters into account
+            if (!string.IsNullOrEmpty(authorsResourceParameters.Genre))
+            {
+                // trim & ignore casing
+                var genreForWhereClause = authorsResourceParameters.Genre
+                    .Trim().ToLowerInvariant();
+
+                // apply filter
+                collectionBeforePaging = collectionBeforePaging
+                    .Where(a => a.Genre.ToLowerInvariant() == genreForWhereClause);
+            }
+
+            // take search query into account
+            if (!string.IsNullOrEmpty(authorsResourceParameters.SearchQuery))
+            {
+                // trim & ignore casing
+                var searchQueryForWhereClause = authorsResourceParameters.SearchQuery
+                    .Trim().ToLowerInvariant();
+
+                // apply search query
+                collectionBeforePaging = collectionBeforePaging
+                    .Where(a => a.Genre.ToLowerInvariant().Contains(searchQueryForWhereClause)
+                                || a.FirstName.ToLowerInvariant().Contains(searchQueryForWhereClause)
+                                || a.LastName.ToLowerInvariant().Contains(searchQueryForWhereClause));
+            }
+
+            // the items paged
+            return PagedList<Author>.Create(collectionBeforePaging,
+                authorsResourceParameters.PageNumber,
+                authorsResourceParameters.PageSize);
         }
 
         public IEnumerable<Author> GetAuthors(IEnumerable<Guid> authorIds)
