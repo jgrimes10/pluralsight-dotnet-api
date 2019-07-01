@@ -120,8 +120,14 @@ namespace Library.API.Controllers
         }
 
         [HttpGet("{id}", Name = "GetAuthor")]
-        public IActionResult GetAuthor(Guid id)
+        public IActionResult GetAuthor(Guid id, [FromQuery] string fields)
         {
+            // make sure dto contains property asked for in request
+            if (!_typeHelperService.TypeHasProperties<AuthorDto>(fields))
+            {
+                return BadRequest();
+            }
+
             // get the author from the db by id
             var authorFromRepo = _libraryRepository.GetAuthor(id);
 
@@ -133,7 +139,7 @@ namespace Library.API.Controllers
             // author was found, so map it to the author DTO
             var author = Mapper.Map<AuthorDto>(authorFromRepo);
             // return the author dto
-            return Ok(author);
+            return Ok(author.ShapeData(fields));
         }
 
         [HttpPost]
