@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 using NLog.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -38,6 +39,10 @@ namespace Library.API
                 setupAction.ReturnHttpNotAcceptable = true;
                 setupAction.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 setupAction.InputFormatters.Add(new XmlDataContractSerializerInputFormatter(new MvcOptions()));
+            }).AddJsonOptions(options =>
+            {
+                options.SerializerSettings.ContractResolver =
+                    new CamelCasePropertyNamesContractResolver();
             });
 
             services.AddSwaggerGen(c =>
@@ -76,6 +81,9 @@ namespace Library.API
 
             // register property mapping service
             services.AddTransient<IPropertyMappingService, PropertyMappingService>();
+
+            // register type helper service
+            services.AddTransient<ITypeHelperService, TypeHelperService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
