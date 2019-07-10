@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Linq;
+using AutoMapper;
 using Library.API.Entities;
 using Library.API.Helpers;
 using Library.API.Models;
@@ -39,6 +40,12 @@ namespace Library.API
                 setupAction.ReturnHttpNotAcceptable = true;
                 setupAction.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 setupAction.InputFormatters.Add(new XmlDataContractSerializerInputFormatter(new MvcOptions()));
+
+                var jsonOutputFormatter = setupAction.OutputFormatters
+                    .OfType<JsonOutputFormatter>().FirstOrDefault();
+
+                jsonOutputFormatter?.SupportedMediaTypes.Add("application/vnd.marvin.hateoas+json");
+
             }).AddJsonOptions(options =>
             {
                 options.SerializerSettings.ContractResolver =
