@@ -41,6 +41,24 @@ namespace Library.API
                 setupAction.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 setupAction.InputFormatters.Add(new XmlDataContractSerializerInputFormatter(new MvcOptions()));
 
+                var xmlDataContractSerializerInputFormatter =
+                    new XmlDataContractSerializerInputFormatter();
+
+                xmlDataContractSerializerInputFormatter.SupportedMediaTypes
+                    .Add("application/vnd.marvin.authorwithdateofdeath.full+xml");
+                setupAction.InputFormatters.Add(xmlDataContractSerializerInputFormatter);
+
+                var jsonInputFormatter = setupAction.InputFormatters
+                    .OfType<JsonInputFormatter>().FirstOrDefault();
+
+                if (jsonInputFormatter != null)
+                {
+                    jsonInputFormatter.SupportedMediaTypes
+                        .Add("application/vnd.marvin.author.full+json");
+                    jsonInputFormatter.SupportedMediaTypes
+                        .Add("application/vnd.marvin.authorwithdateofdeath.full+json");
+                }
+
                 var jsonOutputFormatter = setupAction.OutputFormatters
                     .OfType<JsonOutputFormatter>().FirstOrDefault();
 
@@ -127,10 +145,11 @@ namespace Library.API
                         $"{src.FirstName} {src.LastName}"))
                     // map the authors DoB to just their current age
                     .ForMember(dest => dest.Age, opt => opt.MapFrom(src =>
-                        src.DateOfBirth.GetCurrentAge()));
+                        src.DateOfBirth.GetCurrentAge(src.DateOfDeath)));
 
                 cfg.CreateMap<Book, BookDto>();
                 cfg.CreateMap<AuthorForCreationDto, Author>();
+                cfg.CreateMap<AuthorForCreationWithDateOfDeathDto, Author>();
                 cfg.CreateMap<BookForCreationDto, Book>();
                 cfg.CreateMap<BookForUpdateDto, Book>();
                 cfg.CreateMap<Book, BookForUpdateDto>();

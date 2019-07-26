@@ -196,8 +196,49 @@ namespace Library.API.Controllers
             return Ok(linkedResourceToReturn);
         }
 
-        [HttpPost]
+        [HttpPost(Name = "CreateAuthor")]
+        [RequestHeaderMatchesMediaType("Content-Type",
+            new[] { "application/vnd.marvin.author.full+json" })]
         public IActionResult CreateAuthor([FromBody] AuthorForCreationDto author)
+        {
+            // make sure request body was correctly serialized to AuthorForCreationDto
+            if (author == null) return BadRequest();
+
+            // map the AuthorForCreationDto to an author entity
+            var authorEntity = Mapper.Map<Author>(author);
+
+            // add the entity to the context
+            _libraryRepository.AddAuthor(authorEntity);
+            // save the context to the database
+            if (!_libraryRepository.Save()) throw new Exception("Creating an author failed on save.");
+
+            // map the result
+            var authorToReturn = Mapper.Map<AuthorDto>(authorEntity);
+
+            // create all HATEOS links for new author
+            var links = CreateLinksForAuthor(authorToReturn.Id, null);
+
+            // add links to response
+            var linkedResourceToReturn = authorToReturn.ShapeData(null)
+                as IDictionary<string, object>;
+
+            linkedResourceToReturn.Add("links", links);
+
+            return CreatedAtRoute("GetAuthor",
+                new {id = linkedResourceToReturn["Id"]},
+                linkedResourceToReturn);
+        }
+
+        [HttpPost(Name = "CreateAuthorWithDateOfDeath")]
+        [RequestHeaderMatchesMediaType("Content-Type",
+            new []
+            {
+                "application/vnd.marvin.authorwithdateofdeath.full+json",
+                "application/vnd.marvin.authorwithdateofdeath.full+xml"
+            })]
+        //[RequestHeaderMatchesMediaType("Accept",
+        //    new[] { "..." })]
+        public IActionResult CreateAuthorWithDateOfDeath([FromBody] AuthorForCreationWithDateOfDeathDto author)
         {
             // make sure request body was correctly serialized to AuthorForCreationDto
             if (author == null) return BadRequest();
